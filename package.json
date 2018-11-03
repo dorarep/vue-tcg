@@ -1,0 +1,35 @@
+{
+  "name": "cardgame",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "dorarep <ishikami.naotaka@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/vuetify": "^0.4.3",
+    "animate.css": "^3.7.0",
+    "css-loader": "^1.0.0",
+    "iview": "^3.1.4",
+    "nuxt": "^2.0.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
+    "vue-split-panel": "^1.0.4",
+    "vue-splitpane": "^1.0.2",
+    "vuedraggable": "^2.16.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+.transition-list-enter-active, .transition-list-leave-active {
+  transition: all 1s;
+}
+.transition-list-enter, .transition-list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.manual-v-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 8px !important;
+  padding-top: 8px !important;
+}
+
+.card-wrapper {
+  border: ridge 4px #fff;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 0.7);
+
+  color: white;
+  text-shadow: #000 1px 1px 0;
+}
+
+.tr {
+   display: table;
+ }
+
+.td {
+  display: table-cell;
+}
