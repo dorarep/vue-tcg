@@ -10,7 +10,7 @@ export default {
     BattleField
   },
   created () {
-    this.$store.dispatch('game/initialize')
+    this.$store.dispatch('game/startGame')
   }
 }
 </script>

@@ -3,15 +3,15 @@
     split(v-model="split1").demo-split-pane
       div(slot="left").demo-split-pane
         full-card(:card="$store.state.game.showingCard")
-        v-btn(@click="$store.dispatch('game/turnEnd')") ターン終了
-      div(slot="right").demo-split-pane
-        split(v-model="split2" mode="vertical")
-          div(slot="top").demo-split-pane#field-area
-            deck
-            field
-            foods
-          div(slot="bottom").demo-split-pane
-            hand
+        v-btn(@click="$store.dispatch('game/handleTurnEnd')") ターン終了
+      div(slot="right").demo-split-pane#field-area
+        deck
+        hand(:player=1)
+        foods(:player=1)
+        field(:player=1)
+        field(:player=0)
+        foods(:player=0)
+        hand(:player=0)
 </template>
 
 <script>
