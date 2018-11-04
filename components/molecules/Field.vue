@@ -2,18 +2,18 @@
   v-container(grid-list-md)
     transition-group(name="transition-list" tag="p").manual-v-layout
       v-flex(xs2 v-for="(field, i) in $store.state.game.fields[player]" :key="i")
-        creature(:card="field")
+        mini-card(:card="field")
 </template>
 
 <script>
-  import Creature from '~/components/atoms/Creature.vue'
+  import MiniCard from '~/components/atoms/MiniCard.vue'
 
   export default {
     props: {
       player: Number
     },
     components: {
-      Creature
+      MiniCard
     }
   }
 </script>
