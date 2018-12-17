@@ -23,6 +23,7 @@
     "pug-plain-loader": "^1.0.0",
     "vue-split-panel": "^1.0.4",
     "vue-splitpane": "^1.0.2",
+    "vue-uuid": "^1.1.1",
     "vuedraggable": "^2.16.0"
   },
   "devDependencies": {

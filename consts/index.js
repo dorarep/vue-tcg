@@ -11,6 +11,15 @@ const IF_CREATURE_GREATER_THAN = (num, effect) => {
   }
 }
 
+const MERGE = (effects) => {
+  return {
+    activate: ({ state, commit, player }) => {
+      effects.forEach(effect => effect.activate({ state, commit, player }))
+    },
+    text: effects.join('')
+  }
+}
+
 const ADD_FOOD = (num, imgId) => {
   return {
     activate: ({ commit, player }) => { commit('addFood', {player, num, imgId}) },
